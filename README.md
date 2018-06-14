@@ -36,7 +36,25 @@ Affine - ReLU - Dropout - Affine - Dropout - Softmax -> Labels
 
 ### Test memo:
 
-|model|dataset size(train/test)|#epoch|      model  |  optimizer | parameters |lr| accuracy(test/train) |
-|-----|-----------------------|-------|--------------|------------|------------|--|------------|
-|model 1|50000/10000|25|(conv - relu - conv- relu - pool)x2, lin |torch.optim.Adam|Kaiming He|0.001| 69.76/ 89.58%|
-|model 2|50000/10000|25|(conv - relu - conv- relu - pool)x3, lin-relu-dropout-lin-dropout |torch.optim.Adam|Kaiming He|0.001| 70.83/ 96.01%|
+|model|dataset size(train/test)|#epoch|  optimizer | parameters |lr| accuracy(test/train) |
+|-----|-----------------------|-------|------------|------------|--|------------|
+|model 1|50000/10000|25|torch.optim.Adam|Kaiming He|0.001| 69.76/ 89.58%|
+|model 2|50000/10000|25|torch.optim.Adam|Kaiming He|0.001| 70.83/ 96.01%|
+
+
+### Top 10 incorrect predicted combinations
+
+Based on model 2 result:
+```
+(True) ---> (Predicted)
+ dog   --->   cat
+ cat   --->   dog
+ deer  --->  bird
+ cat   --->  bird
+ plane --->  bird
+ dog   --->  bird
+ truck --->   car
+ deer  --->   cat
+ bird  --->   cat
+ cat   --->  frog
+```
