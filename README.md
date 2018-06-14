@@ -8,7 +8,7 @@ CIFAR-10 https://www.cs.toronto.edu/~kriz/cifar.html
 ### Load CIFAR10 
 - using torchvision.datasets.CIFAR10
 - visualized dataset
-[cifar]([cifar](image/cifar_visualization.png)
+![cifar](image/cifar_visualization.png)
 
 
 ### Model
