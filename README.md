@@ -35,7 +35,9 @@ Affine - ReLU - Dropout - Affine - Dropout - Softmax -> Labels
 ```
 
 #### Model vgg
-
+```
+vgg 16
+```
 
 ### Test memo:
 
@@ -55,12 +57,12 @@ Based on model vgg (current) result:
 (True) ---> (Predicted)
  dog   --->   cat
  cat   --->   dog
- deer  --->  bird
- cat   --->  bird
- plane --->  bird
- dog   --->  bird
- truck --->   car
- deer  --->   cat
+ bird  --->  deer
  bird  --->   cat
+ cat   --->  bird
+ ship  ---> plane
  cat   --->  frog
+ cat   --->  deer
+ deer  --->  bird
+ frog  --->   cat
 ```
