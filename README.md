@@ -48,21 +48,21 @@ vgg 16
 |vgg16  |50000/10000|25|torch.optim.Adam|Kaiming He|0.001| 81.01%/ 97.64%|
 |vgg16  |50000/10000|50|torch.optim.Adam|Kaiming He|0.001| 83.66%/ 99.74%|
 |vgg16  |50000/10000|100|torch.optim.Adam|Kaiming He|0.001->(50epoch)0.0001|83.71%/ 100.0%|
-|vgg16  |50000/10000|250|torch.optim.Adam|Kaiming He|0.001->(150epoch)0.0001|84.57%/ 100.0%|
+|vgg16  |50000/10000|250|torch.optim.Adam|Kaiming He|0.001->(150epoch)0.0001|84.64%/ 100.0%|
 
 ### Top 10 incorrect predicted combinations
 
 Based on model vgg (current) result:
 ```
 (True) ---> (Predicted)
- dog   --->   cat
  cat   --->   dog
+ dog   --->   cat
+ car   ---> truck
  bird  --->  deer
- bird  --->   cat
- cat   --->  bird
- ship  ---> plane
- cat   --->  frog
  cat   --->  deer
- deer  --->  bird
- frog  --->   cat
+ cat   --->  frog
+ bird  --->   cat
+ horse --->  deer
+ bird  --->  frog
+ dog   --->  deer
 ```
