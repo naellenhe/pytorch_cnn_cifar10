@@ -1,4 +1,4 @@
 .DS_Store
 .ipynb_checkpoints/
 dataset/*
-model_vgg.ckpt
+model_vgg*.ckpt
